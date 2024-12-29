@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* General styling for the navigation bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333; /* Adjust color */
+        color: white;
+      }
+    
+      nav .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+    
+      nav ul li {
+        display: inline-block;
+      }
+    
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+      }
+    
+      nav ul li a.active {
+        background-color: #555; /* Highlight for active link */
+        border-radius: 5px;
+      }
+    
+      /* Responsive styles for smaller screens */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    
+        nav ul {
+          display: block;
+          max-height: 150px; /* Adjust height as needed */
+          overflow-y: auto; /* Adds scrollbar for overflow */
+          width: 100%;
+          padding: 10px 0;
+          background-color: #444; /* Background for dropdown */
+        }
+    
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+    
+        nav ul li a {
+          display: block;
+          width: 100%;
+        }
+      }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">FashionStore</div>
+        <ul>
+            <li><a href="index.html"class="active">Home</a></li>
+            <li><a href="shop.html"class="active">Shop</a></li>
+            <li><a href="blog.html"class="active">Blog</a></li>
+            <li><a href="cart.html"class="active">Cart</a></li>
+            <li><a href="login.html"class="active">Login</a></li>
+            <li><a href="about.html"class="active">About Us</a></li>
+            <li><a href="contact.html"class="active">Contact</a></li>
+            <li><a href="pp.html"class="active">Privacy Policy</a></li>
+            <li><a href="testimonial.html"class="active">Testimonials</a></li>
+            <li><a href="offer.html"class="active">Offer Zone</a></li>
+            <li><a href="help.html"class="active">Help Centre</a></li>
+
+        </ul>
+    </nav>
+<main>
+    <!-- Privacy Section -->
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>Effective Date: December 21, 2024</p>
+
+      <div class="section">
+        <button class="section-toggle">1. Information We Collect</button>
+        <div class="section-content">
+          <p>We collect personal information when you register on our website, place an order, or interact with our services. This includes:</p>
+          <ul>
+            <li>Name</li>
+            <li>Email Address</li>
+            <li>Shipping Address</li>
+            <li>Payment Information</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <button class="section-toggle">2. How We Use Your Information</button>
+        <div class="section-content">
+          <p>We use the collected information to:</p>
+          <ul>
+            <li>Process orders and deliver products</li>
+            <li>Communicate with you about your orders</li>
+            <li>Improve our services and website functionality</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <button class="section-toggle">3. Data Protection</button>
+        <div class="section-content">
+          <p>We take reasonable steps to protect your personal data through encryption and secure networks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      
+      <div class="testimonial">
+        <blockquote>
+          <p>"I absolutely love the clothes from Fashion Store! The quality is top-notch, and the customer service is fantastic. Will definitely shop again!"</p>
+        </blockquote>
+        <footer>
+          <p>- Jane D., Fashion Enthusiast</p>
+        </footer>
+      </div>
+
+      <div class="testimonial">
+        <blockquote>
+          <p>"Fast shipping, amazing products, and a smooth shopping experience. I highly recommend this store to anyone looking for stylish and affordable fashion."</p>
+        </blockquote>
+        <footer>
+          <p>- John S., Regular Customer</p>
+        </footer>
+      </div>
+
+      <div class="testimonial">
+        <blockquote>
+          <p>"The Fashion Store always delivers. Every purchase I’ve made has exceeded my expectations. The online experience is seamless and user-friendly."</p>
+        </blockquote>
+        <footer>
+          <p>- Emily R., Loyal Shopper</p>
+        </footer>
+      </div>
+
+      <!-- Testimonial Submission Form -->
+      <div class="testimonial-form">
+        <h3>Submit Your Testimonial</h3>
+        <form id="testimonial-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="testimonial">Your Testimonial:</label>
+          <textarea id="testimonial" name="testimonial" rows="5" required></textarea>
+
+          <button type="submit">Submit Testimonial</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p>&copy; 2024 <strong>Fashion Store</strong>. All rights reserved.</p>
+            <p>Your one-stop shop for the latest fashion trends.</p>
+        </div>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.facebook.com/" aria-label="Visit us on Facebook">
+                    <img src="icons/facebook.svg" alt="Facebook Icon"> Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" aria-label="Visit us on Instagram">
+                    <img src="icons/instagram.svg" alt="Instagram Icon"> Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/?lang=en" aria-label="Visit us on Twitter">
+                    <img src="icons/twitter.svg" alt="Twitter Icon"> Twitter
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<style>
+    /* General Footer Styles */
+    footer {
+        background-color: #333; /* Dark background for contrast */
+        color: #fff; /* White text for readability */
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    /* Footer Info Section */
+    .footer-info {
+        flex: 1;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    
+    .footer-info strong {
+        color: #ffcc00; /* Highlight brand name */
+    }
+    
+    /* Social Links Section */
+    .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social-links li {
+        display: inline-block;
+    }
+    
+    .social-links a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+        color: #ffcc00; /* Hover color */
+    }
+    
+    .social-links img {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .footer-info {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    
+        .social-links {
+            justify-content: center;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        footer {
+            padding: 15px 5px;
+        }
+    
+        .footer-info p {
+            font-size: 0.8rem;
+        }
+    
+        .social-links a {
+            font-size: 0.8rem;
+        }
+    }
+    </style>
+
+  <script src="js/testimonial.js"></script>
+</body>
+</html>

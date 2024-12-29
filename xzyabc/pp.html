@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store - Home</title>
+    <link rel="stylesheet" href="css/pp.css">
+    <style>
+      /* General styling for the navigation bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333; /* Adjust color */
+        color: white;
+      }
+    
+      nav .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+    
+      nav ul li {
+        display: inline-block;
+      }
+    
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+      }
+    
+      nav ul li a.active {
+        background-color: #555; /* Highlight for active link */
+        border-radius: 5px;
+      }
+    
+      /* Responsive styles for smaller screens */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    
+        nav ul {
+          display: block;
+          max-height: 150px; /* Adjust height as needed */
+          overflow-y: auto; /* Adds scrollbar for overflow */
+          width: 100%;
+          padding: 10px 0;
+          background-color: #444; /* Background for dropdown */
+        }
+    
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+    
+        nav ul li a {
+          display: block;
+          width: 100%;
+        }
+      }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">FashionStore</div>
+        <ul>
+            <li><a href="index.html"class="active">Home</a></li>
+            <li><a href="shop.html"class="active">Shop</a></li>
+            <li><a href="blog.html"class="active">Blog</a></li>
+            <li><a href="cart.html"class="active">Cart</a></li>
+            <li><a href="login.html"class="active">Login</a></li>
+            <li><a href="about.html"class="active">About Us</a></li>
+            <li><a href="contact.html"class="active">Contact</a></li>
+            <li><a href="pp.html"class="active">Privacy Policy</a></li>
+            <li><a href="testimonial.html"class="active">Testimonials</a></li>
+            <li><a href="offer.html"class="active">Offer Zone</a></li>
+            <li><a href="help.html"class="active">Help Centre</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section id="privacy-policy">
+          <h2>Privacy Policy</h2>
+          <p>Effective date: December 21, 2024</p>
+          
+          <div class="section">
+            <button class="section-toggle">1. Information We Collect</button>
+            <div class="section-content">
+              <p>We collect personal information when you register on our website, place an order, or interact with our services. This includes:</p>
+              <ul>
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Shipping address</li>
+                <li>Payment information</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="section">
+            <button class="section-toggle">2. How We Use Your Information</button>
+            <div class="section-content">
+              <p>We use the collected information to:</p>
+              <ul>
+                <li>Process orders and deliver products</li>
+                <li>Communicate with you about your orders</li>
+                <li>Improve our services and website functionality</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="section">
+            <button class="section-toggle">3. Data Protection</button>
+            <div class="section-content">
+              <p>We take reasonable steps to protect your personal data through encryption and secure networks.</p>
+            </div>
+          </div>
+        </section>
+    
+        <section id="terms-of-service">
+          <h2>Terms of Service</h2>
+          <p>Effective date: December 21, 2024</p>
+    
+          <div class="section">
+            <button class="section-toggle">1. Introduction</button>
+            <div class="section-content">
+              <p>These Terms of Service govern your use of our website and services. By accessing and using our website, you agree to comply with these terms.</p>
+            </div>
+          </div>
+    
+          <div class="section">
+            <button class="section-toggle">2. User Responsibilities</button>
+            <div class="section-content">
+              <p>As a user, you agree not to:</p>
+              <ul>
+                <li>Use our website for illegal activities</li>
+                <li>Impersonate others or provide false information</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="section">
+            <button class="section-toggle">3. Limitations of Liability</button>
+            <div class="section-content">
+              <p>We are not responsible for any damages that may occur due to the use of our website or services.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 <strong>Fashion Store</strong>. All rights reserved.</p>
+                <p>Your one-stop shop for the latest fashion trends.</p>
+            </div>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.facebook.com/" aria-label="Visit us on Facebook">
+                        <img src="icons/facebook.svg" alt="Facebook Icon"> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" aria-label="Visit us on Instagram">
+                        <img src="icons/instagram.svg" alt="Instagram Icon"> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/?lang=en" aria-label="Visit us on Twitter">
+                        <img src="icons/twitter.svg" alt="Twitter Icon"> Twitter
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <style>
+        /* General Footer Styles */
+        footer {
+            background-color: #333; /* Dark background for contrast */
+            color: #fff; /* White text for readability */
+            padding: 20px 10px;
+            text-align: center;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        /* Footer Info Section */
+        .footer-info {
+            flex: 1;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        
+        .footer-info strong {
+            color: #ffcc00; /* Highlight brand name */
+        }
+        
+        /* Social Links Section */
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .social-links li {
+            display: inline-block;
+        }
+        
+        .social-links a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #ffcc00; /* Hover color */
+        }
+        
+        .social-links img {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .footer-info {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        
+            .social-links {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            footer {
+                padding: 15px 5px;
+            }
+        
+            .footer-info p {
+                font-size: 0.8rem;
+            }
+        
+            .social-links a {
+                font-size: 0.8rem;
+            }
+        }
+        </style>
+ 
+      <script src="js/pp.js"></script>
+    </body>
+    </html>
+    
+
+

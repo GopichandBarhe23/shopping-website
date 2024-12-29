@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+   <!--
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-box {
+            background-color: white;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/015/649/139/small/abstract-fingerprint-scanning-encryption-to-login-cyber-security-icons-on-blue-background-modern-futuristic-vector.jpg');
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .back-button {
+            margin-top: 15px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .back-button a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    -->
+</head>
+<body>
+
+    <div class="signup-box">
+        <h2>Sign Up Form</h2>
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="back-button">
+            <button type="button" onclick="window.location.href='index.html'">Back</button>
+        </div>
+    </div>
+<!--
+    <script>
+        // Sign Up form submit handler
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form data
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Save data to local storage (consider security risks in production)
+            const userData = {
+                username: username,
+                email: email,
+                password: password
+            };
+
+            localStorage.setItem('userData', JSON.stringify(userData));
+            alert('Sign up information saved to local storage!');
+
+            // Redirect to home page or login page after successful sign-up
+            window.location.href = 'index.html';
+        });
+    </script>
+-->
+<script src="js/signup.js"></script>
+</body>
+</html>

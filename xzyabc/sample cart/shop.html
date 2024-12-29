@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .products {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .products-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product {
+            display: inline-block;
+            width: 23%;
+            margin: 1%;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .add-to-cart {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .cart-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="products">
+        <h2 class="products-title">Featured Products</h2>
+        <div class="product" data-id="1" data-name="Men's Casual Shirt" data-price="39.99" data-image="https://images.meesho.com/images/products/390470344/b58mo_512.webp">
+            <img src="https://images.meesho.com/images/products/390470344/b58mo_512.webp" alt="Men's Casual Shirt">
+            <h3>Men's Casual Shirt</h3>
+            <p>Price: $39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-name="Women's Summer Dress" data-price="49.99" data-image="https://cdn.shopify.com/s/files/1/0600/0672/7879/files/1500-x-1500.webp?v=1725621072">
+            <img src="https://cdn.shopify.com/s/files/1/0600/0672/7879/files/1500-x-1500.webp?v=1725621072" alt="Women's Summer Dress">
+            <h3>Women's Summer Dress</h3>
+            <p>Price: $49.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-name="Children's T-Shirt" data-price="19.99" data-image="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/8/14/764a5b50-4da3-455f-abab-5efe3347d3511692004116109-sak.jpg">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/8/14/764a5b50-4da3-455f-abab-5efe3347d3511692004116109-sak.jpg" alt="Children's T-Shirt">
+            <h3>Children's T-Shirt</h3>
+            <p>Price: $19.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="4" data-name="Leather Jacket" data-price="89.99" data-image="https://s.alicdn.com/@sc04/kf/A38d51c508764410090fc3adb7fcab0caX.png">
+            <img src="https://s.alicdn.com/@sc04/kf/A38d51c508764410090fc3adb7fcab0caX.png" alt="Leather Jacket">
+            <h3>Leather Jacket</h3>
+            <p>Price: $89.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    <a href="cart.html" class="cart-link">Go to Cart</a>
+
+    <script>
+        const cart = JSON.parse(localStorage.getItem("cart")) || {};
+
+        document.querySelectorAll(".add-to-cart").forEach(button =>
+            button.addEventListener("click", (e) => {
+                const productElement = e.target.closest(".product");
+                const id = productElement.dataset.id;
+                const name = productElement.dataset.name;
+                const price = parseFloat(productElement.dataset.price);
+                const image = productElement.dataset.image;
+
+                if (!cart[id]) {
+                    cart[id] = { id, name, price, image, quantity: 1 };
+                } else {
+                    cart[id].quantity++;
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${name} added to cart!`);
+            })
+        );
+    </script>
+</body>
+</html>
